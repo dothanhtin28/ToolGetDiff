@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ComputeLoadFileConvert2ListStrring/1.0.0": {
+        "runtime": {
+          "ComputeLoadFileConvert2ListStrring.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ComputeLoadFileConvert2ListStrring/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
