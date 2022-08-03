@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Work\\SampleCodes\\ComputeLoadFileConvert2ListStrring\\ComputeLoadFileConvert2ListStrring\\ComputeLoadFileConvert2ListStrring.csproj": {}
+    "D:\\SampleCode\\ToolGetDiff\\ComputeLoadFileConvert2ListStrring\\ComputeLoadFileConvert2ListStrring.csproj": {}
   },
   "projects": {
-    "E:\\Work\\SampleCodes\\ComputeLoadFileConvert2ListStrring\\ComputeLoadFileConvert2ListStrring\\ComputeLoadFileConvert2ListStrring.csproj": {
+    "D:\\SampleCode\\ToolGetDiff\\ComputeLoadFileConvert2ListStrring\\ComputeLoadFileConvert2ListStrring.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Work\\SampleCodes\\ComputeLoadFileConvert2ListStrring\\ComputeLoadFileConvert2ListStrring\\ComputeLoadFileConvert2ListStrring.csproj",
+        "projectUniqueName": "D:\\SampleCode\\ToolGetDiff\\ComputeLoadFileConvert2ListStrring\\ComputeLoadFileConvert2ListStrring.csproj",
         "projectName": "ComputeLoadFileConvert2ListStrring",
-        "projectPath": "E:\\Work\\SampleCodes\\ComputeLoadFileConvert2ListStrring\\ComputeLoadFileConvert2ListStrring\\ComputeLoadFileConvert2ListStrring.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "E:\\Work\\SampleCodes\\ComputeLoadFileConvert2ListStrring\\ComputeLoadFileConvert2ListStrring\\obj\\",
+        "projectPath": "D:\\SampleCode\\ToolGetDiff\\ComputeLoadFileConvert2ListStrring\\ComputeLoadFileConvert2ListStrring.csproj",
+        "packagesPath": "C:\\Users\\Tindt\\.nuget\\packages\\",
+        "outputPath": "D:\\SampleCode\\ToolGetDiff\\ComputeLoadFileConvert2ListStrring\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tindt\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
