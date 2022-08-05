@@ -42,17 +42,17 @@ namespace ComputeLoadFileConvert2ListStrring
         {
             List<string> filenames1 = System.IO.File.ReadLines(filePath1).ToList(); //db without extension
             List<string> filenames2 = System.IO.File.ReadLines(filePath2).ToList(); //swift
-            var newfilenames = new List<string>(); //collect same name in 2 files
+            var sameFileNames = new List<string>(); //collect same name in 2 files
             var diffFileNames = new List<string>();
             foreach (var item in filenames1)
             {
                 //get same file name
                 var vals = filenames2.Where(s => s.Contains(item)).ToList();
-                newfilenames.AddRange(vals);
+                sameFileNames.AddRange(vals);
             }
-            if(newfilenames.Count > 0)
+            if(sameFileNames.Count > 0)
             {
-                diffFileNames = filenames2.Except(newfilenames).ToList();
+                diffFileNames = filenames2.Except(sameFileNames).ToList();
             }
             var path = @"D:\SampleCode\ToolGetDiff\docs\diff2FileDB_Swift.txt";
             File.WriteAllLines(path, diffFileNames);
