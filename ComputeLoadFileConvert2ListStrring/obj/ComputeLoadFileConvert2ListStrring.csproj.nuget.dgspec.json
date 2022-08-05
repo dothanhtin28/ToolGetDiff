@@ -10,16 +10,14 @@
         "projectUniqueName": "D:\\SampleCode\\ToolGetDiff\\ComputeLoadFileConvert2ListStrring\\ComputeLoadFileConvert2ListStrring.csproj",
         "projectName": "ComputeLoadFileConvert2ListStrring",
         "projectPath": "D:\\SampleCode\\ToolGetDiff\\ComputeLoadFileConvert2ListStrring\\ComputeLoadFileConvert2ListStrring.csproj",
-        "packagesPath": "C:\\Users\\dotha\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Tindt\\.nuget\\packages\\",
         "outputPath": "D:\\SampleCode\\ToolGetDiff\\ComputeLoadFileConvert2ListStrring\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "F:\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\dotha\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Tindt\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -50,8 +48,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -60,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400-preview.22330.6\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
