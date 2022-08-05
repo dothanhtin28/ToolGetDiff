@@ -9,14 +9,14 @@ namespace ComputeLoadFileConvert2ListStrring
     {
         static void Main(string[] args)
         {
-            var swiftFilePath = @"E:\Work\SampleCodes\ComputeLoadFileConvert2ListStrring\docs\filePathDataSwift.txt";
+            var swiftFilePath = @"D:\SampleCode\ToolGetDiff\docs\filePathDataSwift.txt";
             List<string> dataOfSwift = System.IO.File.ReadLines(swiftFilePath).ToList();
-            var dbFilePath = @"E:\Work\SampleCodes\ComputeLoadFileConvert2ListStrring\docs\filePathDataCouchbase.txt";
+            var dbFilePath = @"D:\SampleCode\ToolGetDiff\docs\filePathDataCouchbase.txt";
             List<string> dataOfDb = System.IO.File.ReadLines(dbFilePath).ToList();
 
             var diffFilePaths = dataOfSwift.Except(dataOfDb);
             //var diffFilePaths = dataOfDb.Except(dataOfSwift);
-            File.WriteAllLines(@"E:\Work\SampleCodes\ComputeLoadFileConvert2ListStrring\docs\Compare.txt", diffFilePaths);
+            File.WriteAllLines(@"D:\SampleCode\ToolGetDiff\docs\Compare.txt", diffFilePaths);
         }
     }
 }
