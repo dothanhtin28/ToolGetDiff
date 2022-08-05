@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Tindt\\.nuget\\packages\\": {},
+    "C:\\Users\\dotha\\.nuget\\packages\\": {},
+    "F:\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -17,14 +18,16 @@
       "projectUniqueName": "D:\\SampleCode\\ToolGetDiff\\ComputeLoadFileConvert2ListStrring\\ComputeLoadFileConvert2ListStrring.csproj",
       "projectName": "ComputeLoadFileConvert2ListStrring",
       "projectPath": "D:\\SampleCode\\ToolGetDiff\\ComputeLoadFileConvert2ListStrring\\ComputeLoadFileConvert2ListStrring.csproj",
-      "packagesPath": "C:\\Users\\Tindt\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\dotha\\.nuget\\packages\\",
       "outputPath": "D:\\SampleCode\\ToolGetDiff\\ComputeLoadFileConvert2ListStrring\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "F:\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Tindt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dotha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -55,7 +58,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -64,7 +68,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400-preview.22330.6\\RuntimeIdentifierGraph.json"
       }
     }
   }

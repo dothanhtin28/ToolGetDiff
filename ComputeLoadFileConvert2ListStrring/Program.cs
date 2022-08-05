@@ -11,17 +11,54 @@ namespace ComputeLoadFileConvert2ListStrring
         static void Main(string[] args)
         {
             var swiftFilePath = @"D:\SampleCode\ToolGetDiff\docs\20220803-swift-list-format.txt";
-            List<string> dataOfSwift = System.IO.File.ReadLines(swiftFilePath).ToList();
+            //List<string> dataOfSwift = System.IO.File.ReadLines(swiftFilePath).ToList();
             //get DB FilePath
             //var dbFilePath = @"D:\SampleCode\ToolGetDiff\docs\filePathDataCouchbase.txt";
             var dbFilePath = @"D:\SampleCode\ToolGetDiff\docs\dbAttachment220803.txt";
             //List<string> dataOfDb = System.IO.File.ReadLines(dbFilePath).ToList();
-            var extensionFileNames = pathGenerateExtensionfile(dbFilePath);
-            List<string> dataOfDb = System.IO.File.ReadLines(extensionFileNames).ToList();
-            var diffFilePaths = dataOfSwift.Except(dataOfDb);
+            //var extensionFileNames = pathGenerateExtensionfile(dbFilePath);
+            var fileNamesWithoutExtensionPath = generateWithRemoveExtensionFile(dbFilePath);
+            //List<string> dataOfDb = System.IO.File.ReadLines(extensionFileNames).ToList();
+            //var diffFilePaths = dataOfSwift.Except(dataOfDb);
             //var diffFilePaths = dataOfDb.Except(dataOfSwift);
-            File.WriteAllLines(@"D:\SampleCode\ToolGetDiff\docs\Compare.txt", diffFilePaths);
+            //File.WriteAllLines(@"D:\SampleCode\ToolGetDiff\docs\Compare.txt", diffFilePaths);
+            var diffPath = generateDiff2Files(fileNamesWithoutExtensionPath, swiftFilePath);
         }
+
+        static string generateWithRemoveExtensionFile(string filePath)
+        {
+            List<string> filenames = System.IO.File.ReadLines(filePath).ToList();
+            var newfilenames = new List<string>();
+            foreach (var item in filenames)
+            {
+                newfilenames.Add(Path.GetFileNameWithoutExtension(item));
+            }
+            var path = @"D:\SampleCode\ToolGetDiff\docs\NameWithoutExtensionFile.txt";
+            File.WriteAllLines(path, newfilenames);
+            return path;
+        }
+
+        static string generateDiff2Files(string filePath1,string filePath2)
+        {
+            List<string> filenames1 = System.IO.File.ReadLines(filePath1).ToList(); //db without extension
+            List<string> filenames2 = System.IO.File.ReadLines(filePath2).ToList(); //swift
+            var newfilenames = new List<string>(); //collect same name in 2 files
+            var diffFileNames = new List<string>();
+            foreach (var item in filenames1)
+            {
+                //get same file name
+                var vals = filenames2.Where(s => s.Contains(item)).ToList();
+                newfilenames.AddRange(vals);
+            }
+            if(newfilenames.Count > 0)
+            {
+                diffFileNames = filenames2.Except(newfilenames).ToList();
+            }
+            var path = @"D:\SampleCode\ToolGetDiff\docs\diff2FileDB_Swift.txt";
+            File.WriteAllLines(path, diffFileNames);
+            return path;
+        }
+
         static string pathGenerateExtensionfile(string filePath)
         {
             List<string> filenames = System.IO.File.ReadLines(filePath).ToList();
